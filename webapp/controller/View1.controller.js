@@ -20,6 +20,7 @@ sap.ui.define([
                 var email       = this.getView().byId("idEmail").getValue();
 
                 if (!usuario) {
+                    // Popup message error
                     sap.m.MessageBox.error(this.getView().getModel("i18n").getResourceBundle().getText("lblMsgErrorUser"));
                     return;
                 }
@@ -34,6 +35,7 @@ sap.ui.define([
                 this.getView().getModel().create('/AlunosFioriEDSONCRSet', oDados, {
                     success: function (oData, oResponse) {
                         sap.m.MessageBox.success(that.getView().getModel("i18n").getResourceBundle().getText("lblMsgCreateOK"));
+                        // Clear fields
                         that.getView().byId("idUsuario").setValue("");
                         that.getView().byId("idNome") .setValue("");
                         that.getView().byId("idProjSegw").setValue("");

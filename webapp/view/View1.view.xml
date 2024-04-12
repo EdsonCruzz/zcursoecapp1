@@ -32,11 +32,11 @@
                     </f:SimpleForm>
                     
                 </f:content>
-            </f:SimpleForm>                        
+            </f:SimpleForm>    
 
+            <Button id="_IDGenButton1" text="{i18n>lblCriar}" press="onCreate" />
+                            
         </VBox>
-
-        <Button id="_IDGenButton1" text="{i18n>lblCriar}" press="onCreate"></Button>
 
         <Table id="idTableAluno" items="{/AlunosFioriEDSONCRSet}">
 
