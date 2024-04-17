@@ -32,13 +32,16 @@
                     </f:SimpleForm>
                     
                 </f:content>
-            </f:SimpleForm>    
-
-            <Button id="_IDGenButton1" text="{i18n>lblCriar}" press="onCreate" />
+            </f:SimpleForm>                
                             
         </VBox>
 
-        <Table id="idTableAluno" items="{/AlunosFioriEDSONCRSet}">
+        <Button id="_IDGenButton1" text="{i18n>lblCriar}" press="onCreate" ></Button>
+        <Button id="_IDGenButton2" text="{i18n>lblDeletar}" press="onDelete" ></Button>
+        <Button id="_IDGenButton3" text="{i18n>lblAtualizar}" press="onUpdate" ></Button>
+        <Button id="_IDGenButton4" text="{i18n>lblConsultar}" press="onChangeUser" ></Button>
+
+        <Table id="idTableAluno" items="{/AlunosFioriEDSONCRSet}" mode="MultiSelect">
 
             <columns>
                 <Column id="_IDGenColumn1">
